@@ -143,7 +143,7 @@ function step2() {
     var sheetName = ss.getSheets()[0].getSheetName();
     var sheet = ss.getSheetByName(sheetName);
   
-    if (sheet == null || sheetName == 'Sheet1') {
+    if (sheet == null || sheetName == 'OAuth Tokens') {
         Logger.log('Did not find OAuth Tokens tab. Please run function "step1" or GAM in order to generate the user tokens')
         return;
     }
